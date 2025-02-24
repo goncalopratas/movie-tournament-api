@@ -1,0 +1,42 @@
+Description
+
+This project is a [brief description of your project].
+
+Installation
+
+To run this project, you need to have Deno installed. If you haven't installed
+Deno yet, you can do so using the following command: MAC: curl -fsSL
+https://deno.land/install.sh | sh Windows: irm https://deno.land/install.ps1 |
+iex
+
+https://github.com/goncalopratas/movie-tournament-api.git
+
+Getting Started
+
+Follow these steps to get this project up and running:
+
+1. Clone the repository
+   https://github.com/goncalopratas/movie-tournament-api.git
+
+2. Run the server
+
+Start the Deno server using the following command:
+
+deno run --A main.ts
+
+Usage
+
+This API have 2 endpoint: /search and /startTournament
+
+/search is GET HTTP request to an external API that requires parameter
+"movieTitle" with the name of the movie to work
+
+/startTournament is a POST HTTP request that requires a List of 8 Movies: {
+"id": number, "title": string, "release_date": string,"vote_average": number,
+"popularity": number }
+
+Returning at the end the results of the tournament.
+
+License
+
+This project is licensed under the MIT License.
